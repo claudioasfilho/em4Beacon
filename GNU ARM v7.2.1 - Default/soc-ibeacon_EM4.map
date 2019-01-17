@@ -8082,7 +8082,7 @@ LOAD /Applications/Simplicity Studio.app/Contents/Eclipse/developer/toolchains/g
                 0x0000000020000800       0x17 ./gatt_db.o
                 0x0000000020000800                bg_gattdb_data_attribute_field_6_data
  *fill*         0x0000000020000817        0x1 
- .data.bcnBeaconAdvData.11443
+ .data.eddystone_data
                 0x0000000020000818       0x1e ./main.o
  *fill*         0x0000000020000836        0x2 
  .data.SystemCoreClock
@@ -9107,51 +9107,51 @@ OUTPUT(soc-ibeacon_EM4.axf elf32-littlearm)
  .comment       0x000000000000007e       0x7f /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/lib/EFR32BG13P/GCC/libpsstore.a(store.c.obj)
  .comment       0x000000000000007e       0x7f /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/lib/EFR32BG13P/GCC/libpsstore.a(crc32.c.obj)
 
-.debug_info     0x0000000000000000    0x23345
+.debug_info     0x0000000000000000    0x23256
  .debug_info    0x0000000000000000      0x207 ./application_properties.o
  .debug_info    0x0000000000000207      0x4f7 ./gatt_db.o
  .debug_info    0x00000000000006fe      0x1ec ./init_app.o
  .debug_info    0x00000000000008ea      0x333 ./init_board_efr32xg1.o
  .debug_info    0x0000000000000c1d     0x1210 ./init_mcu_efr32xg1.o
- .debug_info    0x0000000000001e2d     0x6e73 ./main.o
- .debug_info    0x0000000000008ca0      0xbe2 ./pti.o
- .debug_info    0x0000000000009882     0x54a9 ./hardware/kit/common/drivers/mx25flash_spi.o
- .debug_info    0x000000000000ed2b      0x273 ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
- .debug_info    0x000000000000ef9e      0x968 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
- .debug_info    0x000000000000f906     0x10eb ./platform/emdrv/sleep/src/sleep.o
- .debug_info    0x00000000000109f1     0x3bcd ./platform/emlib/src/em_cmu.o
- .debug_info    0x00000000000145be      0xd7b ./platform/emlib/src/em_core.o
- .debug_info    0x0000000000015339     0x70f6 ./platform/emlib/src/em_crypto.o
- .debug_info    0x000000000001c42f     0x30b2 ./platform/emlib/src/em_emu.o
- .debug_info    0x000000000001f4e1      0xf05 ./platform/emlib/src/em_gpio.o
- .debug_info    0x00000000000203e6      0xb1b ./platform/emlib/src/em_msc.o
- .debug_info    0x0000000000020f01      0x359 ./platform/emlib/src/em_rmu.o
- .debug_info    0x000000000002125a      0xbc3 ./platform/emlib/src/em_rtcc.o
- .debug_info    0x0000000000021e1d      0x28a ./platform/emlib/src/em_system.o
- .debug_info    0x00000000000220a7     0x129e ./platform/emlib/src/em_usart.o
+ .debug_info    0x0000000000001e2d     0x6d84 ./main.o
+ .debug_info    0x0000000000008bb1      0xbe2 ./pti.o
+ .debug_info    0x0000000000009793     0x54a9 ./hardware/kit/common/drivers/mx25flash_spi.o
+ .debug_info    0x000000000000ec3c      0x273 ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
+ .debug_info    0x000000000000eeaf      0x968 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
+ .debug_info    0x000000000000f817     0x10eb ./platform/emdrv/sleep/src/sleep.o
+ .debug_info    0x0000000000010902     0x3bcd ./platform/emlib/src/em_cmu.o
+ .debug_info    0x00000000000144cf      0xd7b ./platform/emlib/src/em_core.o
+ .debug_info    0x000000000001524a     0x70f6 ./platform/emlib/src/em_crypto.o
+ .debug_info    0x000000000001c340     0x30b2 ./platform/emlib/src/em_emu.o
+ .debug_info    0x000000000001f3f2      0xf05 ./platform/emlib/src/em_gpio.o
+ .debug_info    0x00000000000202f7      0xb1b ./platform/emlib/src/em_msc.o
+ .debug_info    0x0000000000020e12      0x359 ./platform/emlib/src/em_rmu.o
+ .debug_info    0x000000000002116b      0xbc3 ./platform/emlib/src/em_rtcc.o
+ .debug_info    0x0000000000021d2e      0x28a ./platform/emlib/src/em_system.o
+ .debug_info    0x0000000000021fb8     0x129e ./platform/emlib/src/em_usart.o
 
-.debug_abbrev   0x0000000000000000     0x3688
+.debug_abbrev   0x0000000000000000     0x365f
  .debug_abbrev  0x0000000000000000       0xa0 ./application_properties.o
  .debug_abbrev  0x00000000000000a0       0xdb ./gatt_db.o
  .debug_abbrev  0x000000000000017b       0xec ./init_app.o
  .debug_abbrev  0x0000000000000267       0xf5 ./init_board_efr32xg1.o
  .debug_abbrev  0x000000000000035c      0x1de ./init_mcu_efr32xg1.o
- .debug_abbrev  0x000000000000053a      0x460 ./main.o
- .debug_abbrev  0x000000000000099a      0x22a ./pti.o
- .debug_abbrev  0x0000000000000bc4      0x40e ./hardware/kit/common/drivers/mx25flash_spi.o
- .debug_abbrev  0x0000000000000fd2      0x12e ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
- .debug_abbrev  0x0000000000001100      0x215 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
- .debug_abbrev  0x0000000000001315      0x3ec ./platform/emdrv/sleep/src/sleep.o
- .debug_abbrev  0x0000000000001701      0x4de ./platform/emlib/src/em_cmu.o
- .debug_abbrev  0x0000000000001bdf      0x340 ./platform/emlib/src/em_core.o
- .debug_abbrev  0x0000000000001f1f      0x439 ./platform/emlib/src/em_crypto.o
- .debug_abbrev  0x0000000000002358      0x4dd ./platform/emlib/src/em_emu.o
- .debug_abbrev  0x0000000000002835      0x2f7 ./platform/emlib/src/em_gpio.o
- .debug_abbrev  0x0000000000002b2c      0x2b7 ./platform/emlib/src/em_msc.o
- .debug_abbrev  0x0000000000002de3      0x200 ./platform/emlib/src/em_rmu.o
- .debug_abbrev  0x0000000000002fe3      0x237 ./platform/emlib/src/em_rtcc.o
- .debug_abbrev  0x000000000000321a      0x129 ./platform/emlib/src/em_system.o
- .debug_abbrev  0x0000000000003343      0x345 ./platform/emlib/src/em_usart.o
+ .debug_abbrev  0x000000000000053a      0x437 ./main.o
+ .debug_abbrev  0x0000000000000971      0x22a ./pti.o
+ .debug_abbrev  0x0000000000000b9b      0x40e ./hardware/kit/common/drivers/mx25flash_spi.o
+ .debug_abbrev  0x0000000000000fa9      0x12e ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
+ .debug_abbrev  0x00000000000010d7      0x215 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
+ .debug_abbrev  0x00000000000012ec      0x3ec ./platform/emdrv/sleep/src/sleep.o
+ .debug_abbrev  0x00000000000016d8      0x4de ./platform/emlib/src/em_cmu.o
+ .debug_abbrev  0x0000000000001bb6      0x340 ./platform/emlib/src/em_core.o
+ .debug_abbrev  0x0000000000001ef6      0x439 ./platform/emlib/src/em_crypto.o
+ .debug_abbrev  0x000000000000232f      0x4dd ./platform/emlib/src/em_emu.o
+ .debug_abbrev  0x000000000000280c      0x2f7 ./platform/emlib/src/em_gpio.o
+ .debug_abbrev  0x0000000000002b03      0x2b7 ./platform/emlib/src/em_msc.o
+ .debug_abbrev  0x0000000000002dba      0x200 ./platform/emlib/src/em_rmu.o
+ .debug_abbrev  0x0000000000002fba      0x237 ./platform/emlib/src/em_rtcc.o
+ .debug_abbrev  0x00000000000031f1      0x129 ./platform/emlib/src/em_system.o
+ .debug_abbrev  0x000000000000331a      0x345 ./platform/emlib/src/em_usart.o
 
 .debug_aranges  0x0000000000000000      0x958
  .debug_aranges
@@ -9197,30 +9197,30 @@ OUTPUT(soc-ibeacon_EM4.axf elf32-littlearm)
  .debug_aranges
                 0x00000000000008a0       0xb8 ./platform/emlib/src/em_usart.o
 
-.debug_line     0x0000000000000000     0x7c3e
+.debug_line     0x0000000000000000     0x7ca2
  .debug_line    0x0000000000000000      0x1b7 ./application_properties.o
  .debug_line    0x00000000000001b7      0x1af ./gatt_db.o
  .debug_line    0x0000000000000366      0x289 ./init_app.o
  .debug_line    0x00000000000005ef      0x2ec ./init_board_efr32xg1.o
  .debug_line    0x00000000000008db      0x34b ./init_mcu_efr32xg1.o
- .debug_line    0x0000000000000c26      0x600 ./main.o
- .debug_line    0x0000000000001226      0x40d ./pti.o
- .debug_line    0x0000000000001633      0xf1e ./hardware/kit/common/drivers/mx25flash_spi.o
- .debug_line    0x0000000000002551      0x1b2 ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
- .debug_line    0x0000000000002703      0x345 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
- .debug_line    0x0000000000002a48      0x4bb ./platform/emdrv/sleep/src/sleep.o
- .debug_line    0x0000000000002f03     0x1039 ./platform/emlib/src/em_cmu.o
- .debug_line    0x0000000000003f3c      0x4fc ./platform/emlib/src/em_core.o
- .debug_line    0x0000000000004438     0x1373 ./platform/emlib/src/em_crypto.o
- .debug_line    0x00000000000057ab      0xb89 ./platform/emlib/src/em_emu.o
- .debug_line    0x0000000000006334      0x432 ./platform/emlib/src/em_gpio.o
- .debug_line    0x0000000000006766      0x4b1 ./platform/emlib/src/em_msc.o
- .debug_line    0x0000000000006c17      0x31c ./platform/emlib/src/em_rmu.o
- .debug_line    0x0000000000006f33      0x3e0 ./platform/emlib/src/em_rtcc.o
- .debug_line    0x0000000000007313      0x2cd ./platform/emlib/src/em_system.o
- .debug_line    0x00000000000075e0      0x65e ./platform/emlib/src/em_usart.o
+ .debug_line    0x0000000000000c26      0x664 ./main.o
+ .debug_line    0x000000000000128a      0x40d ./pti.o
+ .debug_line    0x0000000000001697      0xf1e ./hardware/kit/common/drivers/mx25flash_spi.o
+ .debug_line    0x00000000000025b5      0x1b2 ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
+ .debug_line    0x0000000000002767      0x345 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
+ .debug_line    0x0000000000002aac      0x4bb ./platform/emdrv/sleep/src/sleep.o
+ .debug_line    0x0000000000002f67     0x1039 ./platform/emlib/src/em_cmu.o
+ .debug_line    0x0000000000003fa0      0x4fc ./platform/emlib/src/em_core.o
+ .debug_line    0x000000000000449c     0x1373 ./platform/emlib/src/em_crypto.o
+ .debug_line    0x000000000000580f      0xb89 ./platform/emlib/src/em_emu.o
+ .debug_line    0x0000000000006398      0x432 ./platform/emlib/src/em_gpio.o
+ .debug_line    0x00000000000067ca      0x4b1 ./platform/emlib/src/em_msc.o
+ .debug_line    0x0000000000006c7b      0x31c ./platform/emlib/src/em_rmu.o
+ .debug_line    0x0000000000006f97      0x3e0 ./platform/emlib/src/em_rtcc.o
+ .debug_line    0x0000000000007377      0x2cd ./platform/emlib/src/em_system.o
+ .debug_line    0x0000000000007644      0x65e ./platform/emlib/src/em_usart.o
 
-.debug_str      0x0000000000000000     0xe1f3
+.debug_str      0x0000000000000000     0xe1c3
  .debug_str     0x0000000000000000      0x292 ./application_properties.o
                                         0x2ef (size before relaxing)
  .debug_str     0x0000000000000292      0x476 ./gatt_db.o
@@ -9231,59 +9231,59 @@ OUTPUT(soc-ibeacon_EM4.axf elf32-littlearm)
                                         0x4d1 (size before relaxing)
  .debug_str     0x0000000000000bf5      0xc69 ./init_mcu_efr32xg1.o
                                        0x11a4 (size before relaxing)
- .debug_str     0x000000000000185e     0x8a71 ./main.o
-                                       0x960c (size before relaxing)
- .debug_str     0x000000000000a2cf      0x1de ./pti.o
+ .debug_str     0x000000000000185e     0x8a3b ./main.o
+                                       0x95d6 (size before relaxing)
+ .debug_str     0x000000000000a299      0x1de ./pti.o
                                         0x820 (size before relaxing)
- .debug_str     0x000000000000a4ad      0x7e5 ./hardware/kit/common/drivers/mx25flash_spi.o
+ .debug_str     0x000000000000a477      0x7e5 ./hardware/kit/common/drivers/mx25flash_spi.o
                                         0xeff (size before relaxing)
- .debug_str     0x000000000000ac92      0x160 ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
+ .debug_str     0x000000000000ac5c      0x160 ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
                                         0x339 (size before relaxing)
- .debug_str     0x000000000000adf2      0x33c ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
+ .debug_str     0x000000000000adbc      0x33c ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
                                         0x668 (size before relaxing)
- .debug_str     0x000000000000b12e      0x217 ./platform/emdrv/sleep/src/sleep.o
+ .debug_str     0x000000000000b0f8      0x217 ./platform/emdrv/sleep/src/sleep.o
                                         0x8bd (size before relaxing)
- .debug_str     0x000000000000b345      0xb60 ./platform/emlib/src/em_cmu.o
+ .debug_str     0x000000000000b30f      0xb60 ./platform/emlib/src/em_cmu.o
                                        0x1a6e (size before relaxing)
- .debug_str     0x000000000000bea5      0x2f0 ./platform/emlib/src/em_core.o
+ .debug_str     0x000000000000be6f      0x2f0 ./platform/emlib/src/em_core.o
                                         0x8d5 (size before relaxing)
- .debug_str     0x000000000000c195      0x7b5 ./platform/emlib/src/em_crypto.o
+ .debug_str     0x000000000000c15f      0x7b5 ./platform/emlib/src/em_crypto.o
                                         0xeb3 (size before relaxing)
- .debug_str     0x000000000000c94a      0xa1b ./platform/emlib/src/em_emu.o
+ .debug_str     0x000000000000c914      0xa1b ./platform/emlib/src/em_emu.o
                                        0x1cdd (size before relaxing)
- .debug_str     0x000000000000d365      0x1aa ./platform/emlib/src/em_gpio.o
+ .debug_str     0x000000000000d32f      0x1aa ./platform/emlib/src/em_gpio.o
                                         0x887 (size before relaxing)
- .debug_str     0x000000000000d50f      0x237 ./platform/emlib/src/em_msc.o
+ .debug_str     0x000000000000d4d9      0x23d ./platform/emlib/src/em_msc.o
                                         0x6da (size before relaxing)
- .debug_str     0x000000000000d746      0x169 ./platform/emlib/src/em_rmu.o
+ .debug_str     0x000000000000d716      0x169 ./platform/emlib/src/em_rmu.o
                                         0x3e2 (size before relaxing)
- .debug_str     0x000000000000d8af      0x304 ./platform/emlib/src/em_rtcc.o
+ .debug_str     0x000000000000d87f      0x304 ./platform/emlib/src/em_rtcc.o
                                         0xa3f (size before relaxing)
- .debug_str     0x000000000000dbb3       0xe3 ./platform/emlib/src/em_system.o
+ .debug_str     0x000000000000db83       0xe3 ./platform/emlib/src/em_system.o
                                         0x30a (size before relaxing)
- .debug_str     0x000000000000dc96      0x55d ./platform/emlib/src/em_usart.o
+ .debug_str     0x000000000000dc66      0x55d ./platform/emlib/src/em_usart.o
                                         0xd86 (size before relaxing)
 
-.debug_loc      0x0000000000000000    0x13859
+.debug_loc      0x0000000000000000    0x1386d
  .debug_loc     0x0000000000000000       0x2c ./init_app.o
  .debug_loc     0x000000000000002c       0x2c ./init_board_efr32xg1.o
  .debug_loc     0x0000000000000058       0x46 ./init_mcu_efr32xg1.o
- .debug_loc     0x000000000000009e      0x2d8 ./main.o
- .debug_loc     0x0000000000000376       0x56 ./pti.o
- .debug_loc     0x00000000000003cc     0x3d07 ./hardware/kit/common/drivers/mx25flash_spi.o
- .debug_loc     0x00000000000040d3       0x5e ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
- .debug_loc     0x0000000000004131       0xe6 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
- .debug_loc     0x0000000000004217      0x2ab ./platform/emdrv/sleep/src/sleep.o
- .debug_loc     0x00000000000044c2     0x2fd3 ./platform/emlib/src/em_cmu.o
- .debug_loc     0x0000000000007495      0x6b2 ./platform/emlib/src/em_core.o
- .debug_loc     0x0000000000007b47     0x837e ./platform/emlib/src/em_crypto.o
- .debug_loc     0x000000000000fec5     0x1c97 ./platform/emlib/src/em_emu.o
- .debug_loc     0x0000000000011b5c      0x890 ./platform/emlib/src/em_gpio.o
- .debug_loc     0x00000000000123ec      0x79e ./platform/emlib/src/em_msc.o
- .debug_loc     0x0000000000012b8a      0x12a ./platform/emlib/src/em_rmu.o
- .debug_loc     0x0000000000012cb4      0x1b2 ./platform/emlib/src/em_rtcc.o
- .debug_loc     0x0000000000012e66       0x8d ./platform/emlib/src/em_system.o
- .debug_loc     0x0000000000012ef3      0x966 ./platform/emlib/src/em_usart.o
+ .debug_loc     0x000000000000009e      0x2ec ./main.o
+ .debug_loc     0x000000000000038a       0x56 ./pti.o
+ .debug_loc     0x00000000000003e0     0x3d07 ./hardware/kit/common/drivers/mx25flash_spi.o
+ .debug_loc     0x00000000000040e7       0x5e ./platform/Device/SiliconLabs/EFR32BG13P/Source/GCC/startup_efr32bg13p.o
+ .debug_loc     0x0000000000004145       0xe6 ./platform/Device/SiliconLabs/EFR32BG13P/Source/system_efr32bg13p.o
+ .debug_loc     0x000000000000422b      0x2ab ./platform/emdrv/sleep/src/sleep.o
+ .debug_loc     0x00000000000044d6     0x2fd3 ./platform/emlib/src/em_cmu.o
+ .debug_loc     0x00000000000074a9      0x6b2 ./platform/emlib/src/em_core.o
+ .debug_loc     0x0000000000007b5b     0x837e ./platform/emlib/src/em_crypto.o
+ .debug_loc     0x000000000000fed9     0x1c97 ./platform/emlib/src/em_emu.o
+ .debug_loc     0x0000000000011b70      0x890 ./platform/emlib/src/em_gpio.o
+ .debug_loc     0x0000000000012400      0x79e ./platform/emlib/src/em_msc.o
+ .debug_loc     0x0000000000012b9e      0x12a ./platform/emlib/src/em_rmu.o
+ .debug_loc     0x0000000000012cc8      0x1b2 ./platform/emlib/src/em_rtcc.o
+ .debug_loc     0x0000000000012e7a       0x8d ./platform/emlib/src/em_system.o
+ .debug_loc     0x0000000000012f07      0x966 ./platform/emlib/src/em_usart.o
 
 .debug_ranges   0x0000000000000000     0x33f8
  .debug_ranges  0x0000000000000000       0x10 ./init_app.o

@@ -23,6 +23,7 @@
 #include "init_app.h"
 #include "ble-configuration.h"
 #include "board_features.h"
+#include "sleep.h"
 
 /* BG stack headers */
 #include "bg_types.h"
@@ -34,6 +35,7 @@
 /* libraries containing default gecko configuration values */
 #include "em_emu.h"
 #include "em_cmu.h"
+#include "em_rmu.h"
 
 /* Device initialization header */
 #include "hal-config.h"
@@ -159,6 +161,23 @@ void cryoSetup(void)
   NVIC_EnableIRQ(CRYOTIMER_IRQn);
 }
 
+#define EDDYSTONE_DATA_LEN           (30)
+enum {IBEACON_HANDLER, EDDYSTONE_HANDLER};
+static uint8_t eddystone_data[EDDYSTONE_DATA_LEN] = {
+
+  0x03,          //Length of service list
+  0x03,          //service list
+  0xAA, 0xFE,    //Eddystone ID
+  0x10,          //length of service data
+  0x16,          //service data
+  0xAA,  0xFE,   //Eddystone ID
+  0x10,          //frame type Eddyston-URL
+  0x00,          // tx power
+  0x00,          //http://www.
+  's','i','l','a','b','s','.','c','o','m'
+
+};
+
 
 /**
  * @brief Function for creating a custom advertisement package
@@ -168,6 +187,8 @@ void cryoSetup(void)
  */
 void bcnSetupAdvBeaconing(void)
 {
+
+#if 0
   /* This function sets up a custom advertisement package according to iBeacon specifications.
    * The advertisement package is 30 bytes long. See the iBeacon specification for further details.
    */
@@ -226,11 +247,19 @@ void bcnSetupAdvBeaconing(void)
   uint8_t len = sizeof(bcnBeaconAdvData);
   uint8_t *pData = (uint8_t*)(&bcnBeaconAdvData);
 
+#endif
+
+
+
+
+
+
   /* Set 0 dBm Transmit Power */
   gecko_cmd_system_set_tx_power(0);
 
   /* Set custom advertising data */
-  gecko_cmd_le_gap_bt5_set_adv_data(0, 0, len, pData);
+ // gecko_cmd_le_gap_bt5_set_adv_data(0, 0, len, pData);
+  gecko_cmd_le_gap_bt5_set_adv_data(EDDYSTONE_HANDLER, 0,30, eddystone_data);
 
   /* Send only 5 advertisement packets */
   gecko_cmd_le_gap_set_advertise_timing(0, 160, 160, 160,5);

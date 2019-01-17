@@ -1,10 +1,6 @@
 main.o: ../main.c ../init_mcu.h ../init_board.h ../init_app.h \
  ../ble-configuration.h ../board_features.h \
- /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/common/bg_types.h \
- /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/soc/native_gecko.h \
- /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hal-config.h \
- /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/board_features.h \
- /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hardware/kit/EFR32BG13_BRD4104A/config/hal-config-board.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emdrv/sleep/inc/sleep.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/em_device.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/efr32bg13p632f512gm48.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/CMSIS/Include/core_cm4.h \
@@ -59,6 +55,11 @@ main.o: ../main.c ../init_mcu.h ../init_board.h ../init_app.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/efr32bg13p_dmareq.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/efr32bg13p_af_ports.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/efr32bg13p_af_pins.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/common/bg_types.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/soc/native_gecko.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hal-config.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/board_features.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hardware/kit/EFR32BG13_BRD4104A/config/hal-config-board.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/halconfig/inc/hal-config/hal-config-types.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_gpio.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_bus.h \
@@ -75,6 +76,7 @@ main.o: ../main.c ../init_mcu.h ../init_board.h ../init_app.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_emu.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_cmu.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_gpio.h \
+ /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_rmu.h \
  ../hal-config.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hardware/kit/common/halconfig/bsphalconfig.h \
  /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hardware/kit/common/bsp/bsp_bcp.h
@@ -89,15 +91,7 @@ main.o: ../main.c ../init_mcu.h ../init_board.h ../init_app.h \
 
 ../board_features.h:
 
-/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/common/bg_types.h:
-
-/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/soc/native_gecko.h:
-
-/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hal-config.h:
-
-/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/board_features.h:
-
-/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hardware/kit/EFR32BG13_BRD4104A/config/hal-config-board.h:
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emdrv/sleep/inc/sleep.h:
 
 /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/em_device.h:
 
@@ -207,6 +201,16 @@ main.o: ../main.c ../init_mcu.h ../init_board.h ../init_app.h \
 
 /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/Device/SiliconLabs/EFR32BG13P/Include/efr32bg13p_af_pins.h:
 
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/common/bg_types.h:
+
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/protocol/bluetooth/ble_stack/inc/soc/native_gecko.h:
+
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hal-config.h:
+
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/board_features.h:
+
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/hardware/kit/EFR32BG13_BRD4104A/config/hal-config-board.h:
+
 /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/halconfig/inc/hal-config/hal-config-types.h:
 
 /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_gpio.h:
@@ -238,6 +242,8 @@ main.o: ../main.c ../init_mcu.h ../init_board.h ../init_app.h \
 /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_cmu.h:
 
 /Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_gpio.h:
+
+/Users/clfilho/SimplicityStudio/BLE/soc-ibeacon_EM4/platform/emlib/inc/em_rmu.h:
 
 ../hal-config.h:
 
