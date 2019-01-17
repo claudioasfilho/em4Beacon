@@ -6,6 +6,7 @@
  *******************************************************************************
  * # License
  * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+ * Written by Claudio Filho
  *******************************************************************************
  *
  * The licensor of this software is Silicon Laboratories Inc. Your use of this
